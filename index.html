@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link id="favicon" rel="icon" type="image/png" href="images/icon-a5-open.png">
+    <script>
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        const frame1 = "images/icon-a5-closed.png";
+        const frame2 = "images/icon-a5-open.png";
+        let i = 0;
+
+        setInterval(() => {
+            const link = document.getElementById("favicon");
+            link.href = i === 0 ? frame1 : frame2;
+            i = (i + 1) % 2;
+        }, 4000);
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ROOMS: DIVERSE WIKI</h1>
+        <nav>
+            <a href="?article=home" to="home" class="link">Home</a>
+            <a
+                onclick='const c=localStorage.getItem("theme")==="dark"?"light":"dark";localStorage.setItem("theme",c);document.documentElement.setAttribute("data-theme",c);'>
+                Toggle theme
+            </a>
+        </nav>
+    </header>
+
+    <main id="article-container" class="article-container">
+        <article>
+            <h2 id="article-title"></h2>
+            <div class="image-block right">
+                <img id="article-image" src="">
+                <p id="article-caption" class="caption"></p>
+            </div>
+            <p id="article-content">
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 mitvteo (website) &amp; Werx, Henry, <s>Z</s>amu (game) - All rights reserved</p>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
