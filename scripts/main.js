@@ -3,6 +3,7 @@ function loadArticle(name) {
     if (!article) {
         document.getElementById("article-image").hidden = true;
         document.getElementById("article-caption").hidden = true;
+        document.getElementById("stub").hidden = true;
 
         document.getElementById("article-title").textContent = "Oops!";
         document.getElementById("article-content").innerHTML = "The article you were looking for doesn't exist.<br><br><a href='?article=home' to='home' class='link'>Back to home</a>";
@@ -35,6 +36,11 @@ function loadArticle(name) {
     } else {
         document.getElementById("article-image").hidden = true;
         document.getElementById("article-caption").hidden = true;
+    }
+    if (article.tags) {
+        document.getElementById("stub").hidden = !article.tags.includes("incomplete");
+    } else {
+        document.getElementById("stub").hidden = true;
     }
     document.getElementById("article-content").innerHTML = article.content;
     document.title = name == "home" ? "ROOMS: DIVERSE WIKI" : article.title + " - ROOMS: DIVERSE WIKI";

@@ -114,6 +114,7 @@ const articles = {
         title: "A--5",
         image: "images/anegative5.png",
         caption: "A--5.",
+        tags: ['incomplete'],
         content: `
         Not to be confused with AA-5. <br>
         <br>
