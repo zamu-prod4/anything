@@ -223,3 +223,11 @@ article ul {
 .hidden {
     display: none;
 }
+
+article ul.quote {
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    list-style: none;
+}
