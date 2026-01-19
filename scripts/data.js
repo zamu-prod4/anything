@@ -82,8 +82,8 @@ const articles = {
         </ul>
         <br>
         <h3>Lore/Fun Facts</h3>
-        "A-5 originally a Vietnamese but he prefer using English." - Henry <br>
-        "A-5 sometimes swears in Vietnamese when bored or angry." - Henry <br>
+        "A-5 is originally a Russian-Vietnamese but he prefers using English." - Henry <br>
+        "A-5 sometimes swears in Vietnamese or Russian when bored or angry." - Henry <br>
         "A-5 was a human. He was taken in by the entities (instead of killing him) 
         and he was put into a capsule. He was transformed into A-5. He was transformed 
         in a form of a baby since the entities wanted to show the humans' incompetence." - <s>Z</s>amu 
@@ -177,7 +177,7 @@ const articles = {
         <h3>Lore/Fun Facts</h3>
         "When A-20 turns into A+20, the process is actually a replacement not a transformation." - Henry <br>
         "A-20 knows Expansive A-20" - Werx <br>
-        "A-20 has phobophobia." - Henry <br>
+        "A-20 fears feeling/being weak and vulnerable." - Henry <br>
         "A-20 is a bully" - Henry <br>
         "A+20 and A-20 are nice to eachother, but bully others a lot, specifically they like 
         bullying <a href='?article=a5' to='a5' class='link'>A-5</a>" - Werx 
